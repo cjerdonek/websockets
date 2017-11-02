@@ -325,6 +325,7 @@ class Connect:
         self._args = args
         self._kwds = kwds
 
+    @asyncio.coroutine
     def _run(self, uri, *,
              create_protocol=None,
              timeout=10, max_size=2 ** 20, max_queue=2 ** 5,
